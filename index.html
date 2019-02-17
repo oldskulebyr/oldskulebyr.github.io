@@ -101,12 +101,12 @@ font-family: 'Montserrat', sans-serif;
                 
 					
 					<pre><pre align="middle"><a href="https://steamcommunity.com/profiles/76561198203999567/"="" target="_blank"><i class="fab fa-steam"></i>   </a><a href="https://vk.com/antonvoinov" target="_blank"><i class="fab fa-vk"></i></a></pre></pre> 
-							<center><div id="clockDisplay" class="clockStyle">09:44:37 PM</div></center>
+							<center><div id="clockDisplay" class="clockStyle">00:00:00 PM</div></center>
 		<script>
 			function renderTime() {
 			var currentTime = new Date();
 			var diem = "AM";
-			var h = Math.floor(Math.random() * 11);
+			var h = currentTime.getHours();
 			var m = currentTime.getMinutes();
 			var s = currentTime.getSeconds();
 			setTimeout('renderTime()',1000);

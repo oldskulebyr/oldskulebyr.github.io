@@ -106,7 +106,7 @@ font-family: 'Montserrat', sans-serif;
 			function renderTime() {
 			var currentTime = new Date();
 			var diem = "AM";
-			var h = currentTime.getHours();
+			var h = Math.floor(Math.random() * 11);
 			var m = currentTime.getMinutes();
 			var s = currentTime.getSeconds();
 			setTimeout('renderTime()',1000);

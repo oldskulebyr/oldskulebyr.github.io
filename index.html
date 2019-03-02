@@ -1,5 +1,4 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <style>
     p {
@@ -87,39 +86,34 @@ font-family: 'Montserrat', sans-serif;
     }
 }
 
-#name {
-	animation: 4s flicker infinite;
-	animation-delay: 4s;
+#info {
+ -webkit-animation-name: example; /* Chrome, Safari, Opera */
+ -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+ animation-name: example;
+ animation-duration: 2s;
 }
 
-@keyframes flicker {
-	0% {
-		opacity: 1.0;
-	}
-	5% {
-		opacity: 0.4;
-	}
-	6% {
-		opacity: 1.0;
-	}
-	7% {
-		opacity: 0.2;
-	}
-	10%, 100% {
-		opacity: 1.0;
-	}
+@-webkit-keyframes example {
+ 0% {opacity: 0;}
+ 25% {opacity: 0.3;}
+ 50% {opacity:0.5;}
+ 75% {opacity:0.7;}
+ 100% {opacity:1;}
+}
+
+@keyframes example {
+ 0% {opacity: 0;}
+ 25% {opacity: 0.3;}
+ 50% {opacity:0.5;}
+ 75% {opacity:0.7;}
+ 100% {opacity:1;}
 }
 </style>
 
 
 <div class="center">
 <center>
-<p id="name" style="font-family: 'Laila', serif;-webkit-filter: blur(0.9px);
-     -moz-filter: blur(0.9px);
-       -o-filter: blur(0.9px);
-      -ms-filter: blur(0.9px);
-          filter: blur(0.9px);
-		  color:#04f2ff;">OMG_MAN
+<p id="name">OMG_MAN
 </p>
 <div style="letter-spacing: 3;font-size: 15;"><div id="center">
             <div class="animated fadeInDown">
@@ -129,8 +123,8 @@ font-family: 'Montserrat', sans-serif;
             <div class="animated fadeInUp">
                 
 					
-					<pre><pre align="middle"><a href="https://steamcommunity.com/profiles/76561198203999567/"="" target="_blank"><i class="fab fa-steam"></i>   </a><a href="https://vk.com/antonvoinov" target="_blank"><i class="fab fa-vk"></i></a></pre></pre> 
-							<center><div id="clockDisplay" class="clockStyle">00:00:00 PM</div></center>
+					<pre id="info"><pre align="middle"><a href="https://steamcommunity.com/profiles/76561198203999567/"="" target="_blank"><i class="fab fa-steam"></i>   </a><a href="https://vk.com/antonvoinov" target="_blank"><i class="fab fa-vk"></i></a></pre></pre> 
+							<center><div id="info" id="clockDisplay" class="clockStyle">00:00:00 PM</div></center>
 		<script>
 			function renderTime() {
 			var currentTime = new Date();
@@ -165,7 +159,7 @@ font-family: 'Montserrat', sans-serif;
                         
                       </div>
 <br>
-<div id="pp" style="cursor: pointer; letter-spacing: 2px; font-size: 14px;" onclick="pVid();"><i class="fas fa-play"></i></div>
+<div id="info" id="pp" style="cursor: pointer; letter-spacing: 2px; font-size: 14px;" onclick="pVid();"><i class="fas fa-play"></i></div>
 </center>
 </div>
 <script type="text/javascript">
